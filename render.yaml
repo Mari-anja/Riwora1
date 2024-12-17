@@ -2,14 +2,14 @@ services:
   - type: web
     name: riwora-api
     env: node
-    buildCommand: cd server && npm install && npm run build
-    startCommand: cd server && npm start
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
         value: 3000
       - key: MONGODB_URL
-        value: your_mongodb_url
+        value: "mongodb+srv://your_actual_username:your_actual_password@your_actual_cluster.mongodb.net/riwora?retryWrites=true&w=majority"
       - key: JWT_SECRET
-        value: your_jwt_secret
+        value: "your_generated_openssl_output"
