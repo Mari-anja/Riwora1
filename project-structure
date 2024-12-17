@@ -1,0 +1,5 @@
+riwora/
+├── client/                 # Frontend React application
+├── server/                 # Backend Node.js application
+├── shared/                 # Shared types and utilities
+└── docker/                 # Docker configuration files 
